@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Rutube AdBlock",
+  "version": "1.3",
+  "description": "Автоматически пропускает видеорекламу на Rutube",
+  "permissions": [],
+  "host_permissions": ["https://rutube.ru/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://rutube.ru/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
